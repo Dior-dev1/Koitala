@@ -485,6 +485,10 @@ body.services-page .header.scrolled {
   color: var(--blanc);
 }
 
+.nav-mobile-action {
+  display: none;
+}
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -2193,6 +2197,26 @@ body.contact-page .map-placeholder {
   .nav-cta {
     margin-left: 0;
     margin-top: var(--espace-sm);
+  }
+
+  .nav-mobile-action {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.8rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .nav-mobile-action.btn-secondary {
+    color: var(--bleu-royal);
+    border-color: var(--bleu-royal);
+    background: transparent;
+  }
+
+  .nav-mobile-action.btn-secondary:hover {
+    background-color: var(--bleu-royal);
+    color: var(--blanc);
   }
 
   .nav-overlay {
