@@ -4,6 +4,21 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  /* === IMAGE HERO AVEC URLS DE SECOURS === */
+  const heroImage = document.querySelector('.external-hero-image');
+  if (heroImage) {
+    const rawFallbacks = heroImage.getAttribute('data-fallbacks') || '';
+    const fallbackQueue = rawFallbacks
+      .split(',')
+      .map(function (url) { return url.trim(); })
+      .filter(Boolean);
+
+    heroImage.addEventListener('error', function () {
+      if (fallbackQueue.length === 0) return;
+      heroImage.src = fallbackQueue.shift();
+    });
+  }
+
   /* === ANIMATION EN CASCADE === */
   function applyStagger(containerSelector, stepMs) {
     document.querySelectorAll(containerSelector).forEach(function (container) {

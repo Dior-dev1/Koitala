@@ -5,9 +5,9 @@
 /* === VARIABLES CSS === */
 :root {
   /* Couleurs principales — thème koitala.netlify.app */
-  --bleu-royal: #1e1e3a;
-  --bleu-royal-dark: #141428;
-  --bleu-royal-light: #2b2b54;
+  --bleu-royal: #1a3a5c;
+  --bleu-royal-dark: #0f1724;
+  --bleu-royal-light: #254a73;
   --marron-fonce: #5c3a1e;
   --marron-light: #7a5230;
   --blanc: #ffffff;
@@ -15,14 +15,14 @@
   --gris-clair: #e2e4e8;
   --gris-moyen: #9a9ab0;
   --gris-texte: #cbd0dc;
-  --noir: #0c0c1a;
-  --or-accent: #c8952c;
-  --or-hover: #b8862a;
-  --orange-accent: #c8952c;
-  --orange-hover: #b8862a;
+  --noir: #0f1724;
+  --or-accent: #e8b86d;
+  --or-hover: #d8a85c;
+  --orange-accent: #e8b86d;
+  --orange-hover: #d8a85c;
   --vert-succes: #28a745;
   --rouge-erreur: #dc3545;
-  --fond-sombre: #1e1e3a;
+  --fond-sombre: #1a3a5c;
   --fond-carte: #24244a;
   --fond-carte-hover: #2c2c58;
   --bordure-sombre: #353560;
@@ -128,7 +128,7 @@ p {
 
 .section-gray {
   background:
-    radial-gradient(circle at top left, rgba(200, 149, 44, 0.08), transparent 30%),
+    radial-gradient(circle at top left, rgba(26, 58, 92, 0.08), transparent 30%),
     linear-gradient(180deg, #f8f9fb 0%, #eef1f5 100%);
 }
 
@@ -1041,7 +1041,7 @@ body.services-page .header.scrolled {
 .cta-section {
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.22), transparent 24%),
-    linear-gradient(135deg, #c8952c 0%, #dba53a 52%, #e7bb62 100%);
+    linear-gradient(135deg, #1a3a5c 0%, #254a73 52%, #2d5f94 100%);
   color: var(--blanc);
   text-align: center;
   padding: var(--espace-xl) 0;
@@ -1742,12 +1742,12 @@ body.contact-page .contact-form-card {
   left: 0;
   right: 0;
   height: 6px;
-  background: linear-gradient(90deg, var(--or-accent), #dba53a, #f0cf8a);
+  background: linear-gradient(90deg, var(--or-accent), #f0c582, #254a73);
 }
 
 body.contact-page .contact-form-card::before {
   height: 8px;
-  background: linear-gradient(90deg, #c8952c, #efc36d, #2a4080);
+  background: linear-gradient(90deg, #e8b86d, #f0c582, #1a3a5c);
 }
 
 .contact-form-card h2 {
