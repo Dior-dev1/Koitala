@@ -2214,6 +2214,10 @@ body.contact-page .map-placeholder {
     background: transparent;
   }
 
+  .nav-menu a.nav-mobile-action.btn-primary {
+    color: var(--blanc);
+  }
+
   .nav-mobile-action.btn-secondary:hover {
     background-color: var(--bleu-royal);
     color: var(--blanc);
