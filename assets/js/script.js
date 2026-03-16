@@ -4,6 +4,26 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  /* === ANIMATION EN CASCADE === */
+  function applyStagger(containerSelector, stepMs) {
+    document.querySelectorAll(containerSelector).forEach(function (container) {
+      var animatedChildren = container.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
+      animatedChildren.forEach(function (el, index) {
+        el.style.setProperty('--stagger-delay', (index * stepMs) + 'ms');
+      });
+    });
+  }
+
+  applyStagger('.cards-grid', 90);
+  applyStagger('.services-grid', 90);
+  applyStagger('.realisations-grid', 90);
+  applyStagger('.values-grid', 90);
+  applyStagger('.process-grid', 90);
+  applyStagger('.testimonials-grid', 90);
+  applyStagger('.proof-grid', 90);
+  applyStagger('.quick-contact-grid', 90);
+  applyStagger('.timeline', 120);
+
   /* === MENU MOBILE HAMBURGER === */
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
