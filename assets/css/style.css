@@ -1123,8 +1123,9 @@ body.services-page .header.scrolled {
   position: absolute;
   top: var(--espace-sm);
   left: var(--espace-sm);
-  background-color: var(--or-accent);
+  background-color: var(--marron-light);
   color: var(--blanc);
+  border: 1px solid rgba(92, 58, 30, 0.25);
   padding: 0.3rem 0.8rem;
   border-radius: var(--rayon-sm);
   font-size: 0.8rem;
