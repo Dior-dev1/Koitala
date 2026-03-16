@@ -240,14 +240,14 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--orange-accent);
+  background-color: var(--bleu-royal);
   color: var(--blanc);
-  border-color: var(--orange-accent);
+  border-color: var(--bleu-royal);
 }
 
 .btn-primary:hover {
-  background-color: var(--orange-hover);
-  border-color: var(--orange-hover);
+  background-color: var(--bleu-royal-dark);
+  border-color: var(--bleu-royal-dark);
   transform: translateY(-2px);
   box-shadow: var(--ombre-moyenne);
 }
@@ -266,12 +266,12 @@ p {
 
 .btn-outline {
   background-color: transparent;
-  color: var(--or-accent);
-  border-color: var(--or-accent);
+  color: var(--bleu-royal);
+  border-color: var(--bleu-royal);
 }
 
 .btn-outline:hover {
-  background-color: var(--or-accent);
+  background-color: var(--bleu-royal);
   color: var(--blanc);
   transform: translateY(-2px);
   box-shadow: var(--ombre-moyenne);
@@ -472,16 +472,16 @@ body.services-page .header.scrolled {
 }
 
 .nav-menu a.btn.nav-cta {
-  background-color: var(--or-accent);
+  background-color: var(--bleu-royal);
   color: var(--blanc);
-  border-color: var(--or-accent);
+  border-color: var(--bleu-royal);
   font-weight: 600;
   border-radius: var(--rayon-sm);
 }
 
 .nav-menu a.btn.nav-cta:hover {
-  background-color: var(--or-hover);
-  border-color: var(--or-hover);
+  background-color: var(--bleu-royal-dark);
+  border-color: var(--bleu-royal-dark);
   color: var(--blanc);
 }
 
