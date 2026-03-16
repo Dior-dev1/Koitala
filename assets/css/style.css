@@ -631,8 +631,10 @@ body.services-page .header.scrolled {
 
 .hero-buttons {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: var(--espace-sm);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .stats-strip {
@@ -2271,13 +2273,18 @@ body.contact-page .map-placeholder {
   }
 
   .hero-buttons {
-    display: none;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.6rem;
   }
 
   .hero-buttons .btn {
-    width: 100%;
+    width: auto;
     text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
   }
 
   .page-banner h1 {
